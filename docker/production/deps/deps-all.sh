@@ -6,7 +6,7 @@ set -e
 $SCRIPTDIR/deps-core.sh
 
 # Install the dependencies for each of the language modules
-for depscript in $SCRIPTDIR/deps-language-*.sh; do
-	echo "Running $depscript..." 1>&2
-	"$depscript"
-done
+# for depscript in $SCRIPTDIR/deps-language-*.sh; do
+# 	echo "Running $depscript..." 1>&2
+# 	"$depscript"
+# done

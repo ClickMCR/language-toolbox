@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 # Copy our dependency scripts and build scripts into the image
 WORKDIR /tmp
-COPY ./server/languages/python/requirements.txt /tmp/deps/requirements.txt
+# COPY ./server/languages/python/requirements.txt /tmp/deps/requirements.txt
 COPY ./docker/production/deps /tmp/deps/
 COPY ./docker/production/build /tmp/build/
 RUN chmod +x /tmp/deps/*.sh /tmp/build/*.sh

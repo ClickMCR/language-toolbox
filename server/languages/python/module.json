@@ -1,3 +1,0 @@
-{
-	"command": ["python3", "./language-python.py", "${PORT}"]
-}

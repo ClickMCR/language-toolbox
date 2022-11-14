@@ -1,3 +1,0 @@
-{
-	"command": ["./build/bin/language-cxx", "${PORT}", "./template"]
-}

@@ -1,3 +1,0 @@
-{
-	"command": ["java", "-jar", "./build/bin/language-java.jar", "${PORT}"]
-}
