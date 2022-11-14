@@ -1,6 +1,8 @@
 Language Toolbox
 ================
 
+**NB: This is an updated fork which only works for JavaScript. ** Minimal edits have been made, just enough to get the production Docker images compiling again. Still based on Node 10, use at your own risk, etc. ;-)
+
 Language Toolbox is a [Docker](https://www.docker.com/)-based microservice that provides multi-language source code processing and analysis functionality for consumption by user-facing tools and applications. Functionality is exposed via Google's [gRPC framework](https://grpc.io/) and includes the following features:
 
 - Generating Abstract Syntax Trees (ASTs) in JSON format
