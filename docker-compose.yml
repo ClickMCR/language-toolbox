@@ -1,0 +1,27 @@
+version: "3"
+services:
+
+  language-toolbox:
+    build: .
+
+
+  https-portal:
+    image: steveltn/https-portal
+    ports:
+      - '80:80'
+      - '443:443'
+    links:
+      - language-toolbox
+    restart: always
+    environment:
+      DOMAINS: "language-toolbox.clickmcr.com -> http://language-toolbox:50051"
+    volumes:
+      - https-portal-data:/var/lib/https-portal
+    # healthcheck:
+    #   test: ["CMD", "service", "nginx", "status"]
+    #   interval: 30s
+    #   timeout: 20s
+    #   retries: 3
+
+volumes:
+  https-portal-data:
